@@ -1,0 +1,32 @@
+li{
+    border: 1px solid green;
+    padding:10px;
+    border-radius: 10px;
+    list-style-type: none;
+    width:140px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.active{ 
+    background-color:green;
+    color: white; 
+} 
+a:hover{
+    color:white;
+    background-color: green;
+}
+a {
+    text-decoration: none;  
+    padding: 10px; 
+    line-height: 30px; 
+    color:black;   
+}
+nav {
+    background-color:beige;
+    padding: 20px;
+    margin:20px;
+}
+
+
+
+

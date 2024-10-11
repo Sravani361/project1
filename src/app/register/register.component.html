@@ -1,0 +1,65 @@
+<div class="container">
+    <form class="box">
+    <div class="formheader">
+        <h1>SIGN UP</h1>
+    </div>
+    <div>
+        <i class="fas fa-camera"></i>
+        <input required type="text" name="fname" placeholder="First Name" #fname="ngModel" ngModel>
+        <div *ngIf="fname.invalid && fname.dirty || fname.touched" class="alert alert-danger">
+            <p *ngIf="fname.errors?.['required']">First Name is required</p>
+          </div>
+    </div>
+    <pre></pre>
+    <div>
+        <input required type="text" name="lname" placeholder="Last Name " #lname="ngModel" ngModel>
+        <div *ngIf="lname.invalid && lname.dirty || lname.touched" class="alert alert-danger">
+            <p *ngIf="lname.errors?.['required']">Last Name is required</p>
+          </div>
+    </div>
+    <pre></pre>
+    <div>
+        <input required type="text" name="dob" placeholder="dd-mm-yyyy " #dob="ngModel" ngModel>
+        <div *ngIf="dob.invalid && dob.dirty || dob.touched" class="alert alert-danger">
+            <p *ngIf="dob.errors?.['required']">Date of Birth is required</p>
+          </div>
+    </div>
+    <pre></pre>
+    <div>
+        <input required type="text" name="phone" placeholder="Phone Number "  minlength="10" #phone="ngModel" ngModel>
+        <div *ngIf="phone.invalid && phone.dirty || phone.touched" class="alert alert-danger">
+            <p *ngIf="phone.errors?.['minlength']">Enter 10 digits number</p>
+            <p *ngIf="phone.errors?.['required']">Phone Number is required </p>
+          </div>
+    </div>
+    <pre></pre>
+    <div>
+        <input required type="text" name="email" placeholder="Email " #email="ngModel" ngModel>
+        <div *ngIf="email.invalid && email.dirty || email.touched" class="alert alert-danger">
+            <p *ngIf="email.errors?.['required']">Email is required</p>
+          </div>
+    </div>
+    <pre></pre>
+    <div>
+        <input required type="password" name="password" placeholder="Password " #password="ngModel" ngModel>
+        <div *ngIf="password.invalid && password.dirty || password.touched" class="alert alert-danger">
+            <p *ngIf="password.errors?.['required']">Password is required</p>
+          </div>
+    </div>
+    <pre></pre>
+    <div>
+        <input required type="password" name="cpassword" placeholder="Confirm Password " #cpassword="ngModel" ngModel>
+        <div *ngIf="cpassword.invalid && cpassword.dirty || cpassword.touched" class="alert alert-danger">
+            <p *ngIf="cpassword.errors?.['required']">Password was not matched</p>
+          </div>    
+    </div>
+    <pre></pre>
+    <div>
+        <label><input type="checkbox">I accept <span style="color: red">Terms & Conditions</span></label>
+    </div>
+    <pre></pre>
+    <div>
+        <button type="button" name="signup" (click)="userreg()"> Sign Up </button>
+    </div>
+    </form>
+</div>

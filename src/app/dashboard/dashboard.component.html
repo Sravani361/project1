@@ -1,0 +1,18 @@
+<div class="container" >
+    <ul>
+        <li class="parent" routerLink="/navbar/dashboard/totalbooks" routerLinkActive="active">Total Books</li>
+        <li class="parent">Categories
+            <ul class="nested">
+                <li class="child" routerLink="/navbar/dashboard/biopics" routerLinkActive="active"><input type="checkbox" > Biopics</li>
+                <li class="child" routerLink="/navbar/dashboard/horror" routerLinkActive="active"><input type="checkbox" >Horror</li>
+                <li class="child" routerLink="/navbar/dashboard/love-stories" routerLinkActive="active"><input type="checkbox">Love Stories</li>
+                <li class="child" routerLink="/navbar/dashboard/comics" routerLinkActive="active"><input type="checkbox">Comics</li>
+                <li class="child"><input type="checkbox">Fantasy & Adventure</li>
+                <li class="child"><input type="checkbox">Mystery & Suspense</li>
+            </ul>
+        </li>
+        <li class="parent" routerLink="/navbar/dashboard/reviews" routerLinkActive="active">Reviews</li>
+        <li class="parent" routerLink="/navbar/dashboard/upcomingreleases" routerLinkActive="active">Upcoming Releases</li>
+    </ul>
+</div>
+<router-outlet></router-outlet>

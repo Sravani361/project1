@@ -1,0 +1,27 @@
+.row {
+    display: flex;
+    justify-content:flex-start;
+    gap:70px;
+}
+.header {
+    text-align: center;
+}
+h2 {
+    margin-left:40px;
+    color:orangered
+}
+p {
+    margin-left:80px;
+    font-size: large;
+}
+h1 {
+    color:navy;
+    padding-left:20px;
+}
+b {
+    color:red;
+}
+.container {
+    background-color:beige;
+    padding:30px 0;
+}

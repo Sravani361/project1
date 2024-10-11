@@ -1,0 +1,51 @@
+.box {
+    border-radius: 10px;
+    max-width:1000px;
+    margin:auto;
+    padding: 30px;
+    border:2px solid green;
+    background-color: beige;
+ 
+}
+.row {
+    display: flex;
+    justify-content:flex-start;
+    gap:50px;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 30px;
+}
+button {
+    background-color:green;
+    border-radius: 10px;
+    color:white;
+    padding:10px 20px;
+}
+.formHeader {
+    text-align: center;
+}
+.container {
+    background-color: beige;
+    padding:20px;
+    margin:20px;
+}
+h1 {
+    color:navy;
+}
+h2 {
+    color:green;
+}
+label {
+    color:red;
+}
+input {
+    border:1px solid green;
+    border-radius:10px;
+    padding:10px;
+}
+select {
+    border:1px solid green;
+    border-radius:10px;
+    padding:10px;
+}
+

@@ -1,0 +1,37 @@
+<body>
+  <div class="container">
+      <div class="formHeader">
+        <img src="https://quotefancy.com/media/wallpaper/3840x2160/8151357-Hello-World-Wallpaper.jpg" style="height: 130px; width: 280px;">
+      </div>
+      <div class ="box">
+      <form>
+        <h1>Login</h1>
+        <div class="form-group">
+            <input required type="text" id="email" name="email" placeholder="Enter Email" autocomplete="on"  class="form-control" #email="ngModel" ngModel>
+            <div *ngIf="email.invalid && email.dirty || email.touched" class="alert alert-danger">
+              <p *ngIf="email.errors?.['required']">Valid Email is required!</p>
+            </div>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <input required type ="password" id="password" name="password" placeholder="Enter Password" autocomplete="on" class="form-control" #password="ngModel" ngModel>
+            <div *ngIf="password.invalid && password.dirty || password.touched" class="alert alert-danger">
+              <p *ngIf="password.errors?.['required']">Password is required!</p>
+            </div>
+        </div>
+        <pre></pre>
+        <button type="submit" (click)="Onlogin()">Sign In</button>
+      </form>
+      <pre></pre>
+      <div class="formFooter">
+        <a routerLink="/forgotpassword" routerLinkActive="active">Forgot Password?</a>
+      </div>
+      <pre></pre>
+      <div class="formFooter">
+        <a routerLink="/register" routerLinkActive="active" style="color:rgb(241, 148, 41)">New User? Register here</a>
+      </div> 
+    </div>
+  </div>
+</body>
+<router-outlet></router-outlet>
+ 

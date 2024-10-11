@@ -1,0 +1,31 @@
+.parent{
+    list-style-type: none;
+    width:250px;
+    margin:15px; 
+    color:navy;
+    font-size: large;
+}
+.child {
+    list-style-type: none;
+    margin:10px;
+    color:green;
+}
+.container {
+    background-color:beige;
+    padding:20px;
+    margin:20px;
+}
+.parent:hover {
+    color:red;
+}
+.child:hover {
+    color:brown;
+}
+
+.active {
+    color:hotpink;
+}
+
+
+
+
